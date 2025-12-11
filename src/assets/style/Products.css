@@ -1,0 +1,251 @@
+#products-page {
+  background: #f3ede5;
+  min-height: 100vh;
+  padding: 80px 0 70px;
+}
+
+.pr-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADER */
+
+.pr-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: flex-end;
+}
+
+.pr-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: #a28263;
+  margin-bottom: 8px;
+}
+
+.pr-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2c1f18;
+}
+
+.pr-lead {
+  font-size: 14px;
+  color: #5b4638;
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+/* FILTER BAR */
+
+.pr-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.pr-filter-btn {
+  padding: 7px 18px;
+  border-radius: 999px;
+  border: 1px solid #d4c1ad;
+  background: transparent;
+  font-size: 13px;
+  color: #6a5241;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.pr-filter-btn:hover {
+  background: #e4d2bf;
+}
+
+.pr-filter-btn.active {
+  background: #2c1f18;
+  color: #f3ede5;
+  border-color: #2c1f18;
+}
+
+/* GRID */
+
+.pr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* PRODUCT CARD */
+
+.pr-card {
+  background: #fbf7f2;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pr-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pr-image-wrap {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.pr-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.pr-card:hover .pr-image-wrap img {
+  transform: scale(1.06);
+  filter: brightness(0.9);
+}
+
+/* TAG */
+
+.pr-tag {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(19, 12, 8, 0.85);
+  color: #f4ece3;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* CARD BODY */
+
+.pr-card-body {
+  padding: 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pr-card-body h3 {
+  font-size: 18px;
+  color: #2c1f18;
+  margin-bottom: 8px;
+}
+
+.pr-desc {
+  font-size: 14px;
+  color: #5b4638;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* META */
+
+.pr-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.pr-category {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #8a715f;
+}
+
+.pr-link {
+  font-size: 12px;
+  color: #2c1f18;
+  text-decoration: none;
+  border-bottom: 1px solid #2c1f18;
+  padding-bottom: 2px;
+}
+
+.pr-link:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* EMPTY STATE */
+
+.pr-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 14px;
+  color: #8a715f;
+}
+
+.pr-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.pr-category {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #8a715f;
+}
+
+/* YANGI: NARX */
+.pr-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c1f18;
+}
+
+/* Link pastga tushgani uchun biroz joy beramiz */
+.pr-link {
+  font-size: 12px;
+  color: #2c1f18;
+  text-decoration: none;
+  border-bottom: 1px solid #2c1f18;
+  padding-bottom: 2px;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .pr-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pr-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .pr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pr-header h1 {
+    font-size: 28px;
+  }
+}
+
+
+

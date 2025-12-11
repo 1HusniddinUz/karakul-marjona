@@ -1,123 +1,92 @@
 import "../assets/style/Contacts.css";
+import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contacts-page">
       <div className="contacts-wrapper">
-        {/* PAGE TITLE */}
-        <h1 className="contacts-heading">Contact</h1>
+        <h1 className="contacts-heading">{t("contacts_heading")}</h1>
 
-        {/* TOP: TEXT + FORM */}
         <div className="contacts-main">
-          {/* LEFT SIDE */}
           <div className="contacts-left">
-            <h2>Get in touch</h2>
-
-            <p className="contacts-left-text">
-              Karakul Marjona atelьesi bilan bog‘lanish uchun qulay kanalni tanlang.
-              Individual buyurtmalar, o‘lcham bo‘yicha tikish va hamkorlik uchun yozishingiz mumkin.
-            </p>
+            <h2>{t("contacts_getintouch")}</h2>
+            <p className="contacts-left-text">{t("contacts_text")}</p>
 
             <div className="contacts-block">
-              <span className="label">Email:</span>
+              <span className="label">{t("contacts_label_email")}</span>
               <a href="mailto:husniddinhalimov112@gmail.com">
                 husniddinhalimov112@gmail.com
               </a>
             </div>
 
             <div className="contacts-block">
-              <span className="label">Telegram:</span>
-              <a
-                href="https://t.me/+998771238096"
-                target="_blank"
-                rel="noreferrer"
-              >
-                +998 77 123 80 96
-              </a>
+              <span className="label">{t("contacts_label_telegram")}</span>
+              <a href="https://t.me/+998771238096">+998 77 123 80 96</a>
             </div>
 
             <div className="contacts-block">
-              <span className="label">Instagram:</span>
-              <a
-                href="https://instagram.com/marjon_karakul"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @marjon_karakul
-              </a>
+              <span className="label">{t("contacts_label_instagram")}</span>
+              <a href="https://instagram.com/marjon_karakul">@marjon_karakul</a>
             </div>
           </div>
 
-          {/* RIGHT SIDE – FORM */}
           <div className="contacts-right">
-            <form
-              className="contact-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                // keyinchalik backend / email service ulaysan
-              }}
-            >
+            <form className="contact-form">
               <div className="form-row">
                 <div className="form-field">
-                  <label>First Name *</label>
-                  <input type="text" name="firstName" required />
+                  <label>{t("contacts_form_firstname")}</label>
+                  <input type="text" required />
                 </div>
+
                 <div className="form-field">
-                  <label>Last Name *</label>
-                  <input type="text" name="lastName" required />
+                  <label>{t("contacts_form_lastname")}</label>
+                  <input type="text" required />
                 </div>
               </div>
 
               <div className="form-field">
-                <label>Email *</label>
-                <input type="email" name="email" required />
+                <label>{t("contacts_form_email")}</label>
+                <input type="email" required />
               </div>
 
               <div className="form-field">
-                <label>Message *</label>
-                <textarea name="message" rows="5" required />
+                <label>{t("contacts_form_message")}</label>
+                <textarea rows="5" required></textarea>
               </div>
 
               <button type="submit" className="submit-btn">
-                Submit
+                {t("contacts_form_submit")}
               </button>
             </form>
           </div>
         </div>
 
-        {/* BOTTOM: INFO + MAP */}
         <div className="contacts-info">
           <div className="contacts-info-grid">
             <div className="info-col">
-              <h3>Manzil</h3>
-              <p>Buxoro shahri, O‘zbekiston</p>
+              <h3>{t("contacts_info_address")}</h3>
+              <p>{t("contacts_info_city")}</p>
             </div>
 
             <div className="info-col">
-              <h3>Ish vaqti</h3>
+              <h3>{t("contacts_info_hours")}</h3>
               <p>Dushanba – Shanba</p>
               <p>10:00 – 19:00</p>
             </div>
 
             <div className="info-col">
-              <h3>Telefon</h3>
+              <h3>{t("contacts_info_phone")}</h3>
               <a href="tel:+998771238096">+998 77 123 80 96</a>
             </div>
 
             <div className="info-col">
-              <h3>Socials</h3>
-              <a
-                href="https://instagram.com/marjon_karakul"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <h3>{t("contacts_info_socials")}</h3>
+              <a href="https://instagram.com/marjon_karakul">
                 <i class="fa-brands fa-instagram"></i>
               </a>
-              <a
-                href="https://t.me/+998771238096"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://t.me/+998771238096">
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </div>

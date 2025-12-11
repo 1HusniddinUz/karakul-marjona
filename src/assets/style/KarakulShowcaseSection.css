@@ -1,0 +1,236 @@
+#karakul-showcase {
+  background: #F3EDE5;
+  padding: 80px 0;
+  color: #14100d;
+}
+
+.ks-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.4fr);
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+
+.ks-left {
+  max-width: 460px;
+}
+
+.ks-tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: #14100d;
+  margin-bottom: 10px;
+}
+
+.ks-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.ks-title span {
+  display: inline-block;
+  color: #14100d;
+}
+
+.ks-text {
+  font-size: 14px;
+  color: #14100d;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.ks-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ks-pills span {
+  border-radius: 999px;
+  border: 1px solid #14100d;
+  padding: 5px 13px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #14100d;
+}
+
+.ks-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ks-link-main,
+.ks-link-secondary {
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 9px 20px;
+  border: 1px solid #14100d;
+  transition: 0.25s ease;
+}
+
+.ks-link-main {
+  background: #d1b696;
+  color: #14100d;
+}
+
+.ks-link-main:hover {
+  background: #e0c7a5;
+  border-color: #14100d;
+}
+
+.ks-link-secondary {
+  background: transparent;
+  color: #14100d;
+}
+
+.ks-link-secondary:hover {
+  background: rgba(209, 182, 150, 0.12);
+}
+
+/* RIGHT COLLAGE */
+
+.ks-right {
+  position: relative;
+  height: 420px;
+}
+
+/* MAIN BIG CARD */
+
+.ks-main-card {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+
+  border-radius: 24px;
+  background-image: url("https://i.ibb.co/HqXPxGW/karakul-coat.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.92);
+
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.85);
+  transform: translateX(32px) rotate(-2.5deg);
+  transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* SMALL CARDS */
+
+.ks-mini-card {
+  position: absolute;
+  width: 40%;
+  height: 45%;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.ks-mini-top {
+  top: -18px;
+  left: -12px;
+  background-image: url("https://i.ibb.co/tppMKtN/hands-craft.jpg");
+  transform: rotate(-4deg);
+}
+
+.ks-mini-bottom {
+  bottom: -12px;
+  right: -10px;
+  background-image: url("https://i.ibb.co/6Nhcsfw/karakul-palatine.jpg");
+  transform: rotate(3deg);
+}
+
+/* VERTICAL LABEL */
+
+.ks-vertical-label {
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #14100d;
+}
+
+/* INTERACTION */
+
+#karakul-showcase:hover .ks-main-card {
+  transform: translateX(18px) rotate(-1deg);
+  filter: brightness(1);
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.95);
+}
+
+#karakul-showcase:hover .ks-mini-top {
+  transform: translateY(-6px) rotate(-3deg);
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.9);
+}
+
+#karakul-showcase:hover .ks-mini-bottom {
+  transform: translateY(6px) rotate(2deg);
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.9);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+  .ks-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ks-right {
+    height: 360px;
+  }
+
+  .ks-vertical-label {
+    left: -36px;
+  }
+}
+
+@media (max-width: 640px) {
+  #karakul-showcase {
+    padding: 60px 0 70px;
+  }
+
+  .ks-title {
+    font-size: 24px;
+  }
+
+  .ks-right {
+    height: 320px;
+  }
+
+  .ks-main-card {
+    width: 78%;
+    transform: translateX(10px) rotate(-2deg);
+  }
+
+  .ks-mini-top {
+    width: 46%;
+  }
+
+  .ks-mini-bottom {
+    width: 46%;
+  }
+
+  .ks-vertical-label {
+    display: none;
+  }
+}

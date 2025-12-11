@@ -1,22 +1,20 @@
 import "../../assets/style/HeroSection.css";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="hero">
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-        <h1 className="hero-title">
-          KARAKUL MARJONA
-        </h1>
+        <h1 className="hero-title">{t("hero_title")}</h1>
 
-        <p className="hero-subtitle">
-          Noyob qo‘l mehnati bilan yaratilgan karakul shubalar, bosh kiyimlar 
-          va avloddan avlodga o‘tgan hunarmandlik anʼanalari.
-        </p>
+        <p className="hero-subtitle">{t("hero_subtitle")}</p>
 
         <button className="hero-btn">
-          Kolleksiyani Ko‘rish
+          {t("hero_button")}
         </button>
       </div>
     </section>

@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/style/Navbar.css";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const { t, i18n } = useTranslation();
 
   return (
     <nav>
@@ -13,7 +16,10 @@ const Navbar = () => {
         </div>
 
         {/* BURGER BUTTON */}
-        <div className={`burger ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
+        <div
+          className={`burger ${open ? "open" : ""}`}
+          onClick={() => setOpen(!open)}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -23,59 +29,86 @@ const Navbar = () => {
         <div className={`nav-links ${open ? "show" : ""}`}>
           <ul>
             <li>
-              <NavLink to="/" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
-                Home
+              <NavLink
+                to="/"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {t(`home`)}
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/products" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
-                Products
+              <NavLink
+                to="/products"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {t(`products`)}
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/marketplaces" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
-                Marketplaces
+              <NavLink
+                to="/marketplaces"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {t(`marketplaces`)}
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/about" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
-                About
+              <NavLink
+                to="/about"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {t(`about`)}
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/contacts" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>
-                Contacts
+              <NavLink
+                to="/contacts"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {t(`contact`)}
               </NavLink>
             </li>
           </ul>
 
           {/* MOBILE LANGUAGE SELECT */}
           <div className="lang-mobile">
-            <select>
-              <option value="uz">Uz</option>
-              <option value="en">En</option>
-              <option value="ru">Ru</option>
-              <option value="fr">Fr</option>
-              <option value="tr">Tr</option>
+            <select
+              id="select"
+              onChange={(e) => i18n.changeLanguage(e.target.value)}
+              defaultValue="uz"
+            >
+              <option value="uz">🇺🇿 O'zbek</option>
+              <option value="ru">🇷🇺 Русский</option>
+              <option value="en">🇬🇧 English</option>
+              <option value="tr">🇹🇷 Türkçe</option>
+              <option value="fr">🇫🇷 Français</option>
             </select>
           </div>
         </div>
 
         {/* DESKTOP LANGUAGE SELECT */}
         <div className="lang-desktop">
-          <select>
-            <option value="uz">Uz</option>
-            <option value="en">En</option>
-            <option value="ru">Ru</option>
-            <option value="fr">Fr</option>
-            <option value="tr">Tr</option>
+          <select
+            id="select"
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+            defaultValue="uz"
+          >
+            <option value="uz">🇺🇿 O'zbek</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="tr">🇹🇷 Türkçe</option>
+            <option value="fr">🇫🇷 Français</option>
           </select>
         </div>
-
       </div>
     </nav>
   );
