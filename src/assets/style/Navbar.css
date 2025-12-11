@@ -1,0 +1,147 @@
+/* ===== NAVBAR BASE ===== */
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  background: #0e0c0b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+nav .container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo-box h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #e6d8c3;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* DESKTOP NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d8c3a5;
+  font-size: 16px;
+  transition: 0.3s ease;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover {
+  color: #f0e6d8;
+  border-bottom: 1px solid #d8c3a5;
+}
+
+.active {
+  color: #f3e8cc !important;
+  border-bottom: 1px solid #d8c3a5 !important;
+}
+
+/* LANGUAGE SELECT */
+.lang-desktop select,
+.lang-mobile select {
+  padding: 6px 10px;
+  background: #1a1716;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #e6d8c3;
+  border-radius: 4px;
+}
+
+/* MOBILE VERSION HIDDEN BY DEFAULT */
+.lang-mobile {
+  display: none;
+}
+
+/* ===== BURGER MENU ===== */
+.burger {
+  width: 30px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 3px;
+  background: #d8c3a5;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.burger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  /* DESKTOP LANGUAGE HIDE */
+  .lang-desktop {
+    display: none;
+  }
+
+  /* MOBILE MENU PANEL */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    height: 100vh;
+    background: #0e0c0b;
+    flex-direction: column;
+    padding: 70px 30px;
+    gap: 30px;
+    transition: 0.4s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  /* MOBILE LANGUAGE */
+  .lang-mobile {
+    display: block;
+    margin-top: 25px;
+  }
+}
