@@ -11,14 +11,14 @@ const Copyright = () => {
       <div className="container">
         <div className="social-link">
           <a
-            href="https://t.me/dasaba_by_dildora"
+            href="https://t.me/+998771238096"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTelegramPlane />
           </a>
           <a
-            href="https://instagram.com/dasaba_by_dildora"
+            href="https://instagram.com/marjon_karakul"
             target="_blank"
             rel="noopener noreferrer"
           >
