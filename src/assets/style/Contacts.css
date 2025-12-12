@@ -12,6 +12,9 @@
 
 /* TOP TITLE */
 .contacts-heading {
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
   text-align: center;
   font-size: 32px;
   color: #2c1f18;
@@ -29,6 +32,9 @@
 
 /* LEFT SIDE */
 .contacts-left h2 {
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 38px;
   margin-bottom: 16px;
   color: #2c1f18;
@@ -139,7 +145,10 @@
   text-align: center;
 }
 .info-col h3 {
-  font-size: 16px;
+    font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
   color: #2c1f18;
   margin-bottom: 6px;
 }
@@ -150,9 +159,8 @@
   color: #5d4c41;
   text-decoration: none;
 }
-.info-col i 
-{
-    font-size: 1.7rem;
+.info-col i {
+  font-size: 1.7rem;
 }
 
 .info-col a:hover {

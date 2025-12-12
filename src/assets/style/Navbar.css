@@ -20,13 +20,8 @@ nav .container {
 }
 
 /* LOGO */
-.logo-box h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 26px;
-  color: #e6d8c3;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 0;
+.logo-box img {
+  height: 50px;
 }
 
 /* DESKTOP NAV LINKS */

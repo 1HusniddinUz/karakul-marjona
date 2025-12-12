@@ -1,5 +1,5 @@
 #karakul-showcase {
-  background: #F3EDE5;
+  background: #f3ede5;
   padding: 80px 0;
   color: #14100d;
 }
@@ -30,13 +30,18 @@
 }
 
 .ks-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 32px;
   letter-spacing: 0.04em;
   margin-bottom: 14px;
 }
 
 .ks-title span {
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  font-style: normal;
   display: inline-block;
   color: #14100d;
 }
@@ -115,16 +120,18 @@
   margin: auto;
   width: 70%;
   height: 100%;
-
   border-radius: 24px;
-  background-image: url("https://i.ibb.co/HqXPxGW/karakul-coat.jpg");
+  background-image: url("../images/hero_1.png");
   background-size: cover;
   background-position: center;
   filter: brightness(0.92);
-
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.85);
   transform: translateX(32px) rotate(-2.5deg);
   transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+  -webkit-transform: translateX(32px) rotate(-2.5deg);
+  -moz-transform: translateX(32px) rotate(-2.5deg);
+  -ms-transform: translateX(32px) rotate(-2.5deg);
+  -o-transform: translateX(32px) rotate(-2.5deg);
 }
 
 /* SMALL CARDS */
@@ -143,14 +150,14 @@
 .ks-mini-top {
   top: -18px;
   left: -12px;
-  background-image: url("https://i.ibb.co/tppMKtN/hands-craft.jpg");
+  background-image: url("../images/hero_2.png");
   transform: rotate(-4deg);
 }
 
 .ks-mini-bottom {
   bottom: -12px;
   right: -10px;
-  background-image: url("https://i.ibb.co/6Nhcsfw/karakul-palatine.jpg");
+  background-image: url("../images/hero_3.png");
   transform: rotate(3deg);
 }
 

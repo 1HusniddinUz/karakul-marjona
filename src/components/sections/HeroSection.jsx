@@ -1,5 +1,6 @@
 import "../../assets/style/HeroSection.css";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -13,9 +14,10 @@ const HeroSection = () => {
 
         <p className="hero-subtitle">{t("hero_subtitle")}</p>
 
-        <button className="hero-btn">
+        {/* NavLink orqali /products ga reloadsiz o'tish */}
+        <NavLink to="/products" className="hero-btn">
           {t("hero_button")}
-        </button>
+        </NavLink>
       </div>
     </section>
   );

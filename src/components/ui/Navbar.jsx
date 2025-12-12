@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/style/Navbar.css";
 import { useTranslation } from "react-i18next";
-
+import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav>
       <div className="container">
         <div className="logo-box">
-          <h1>KARAKUL MARJONA</h1>
+          <img src={logo} alt="KARAKUL LOGO" />
         </div>
 
         {/* BURGER BUTTON */}

@@ -1,5 +1,6 @@
 import "../assets/style/About.css";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom"; // ✅ SPA navigatsiya uchun qo'shildi
 
 const About = () => {
   const { t } = useTranslation();
@@ -101,12 +102,19 @@ const About = () => {
             <p>{t("about_cta_text")}</p>
 
             <div className="cta-actions">
-              <a href="/contacts" className="cta-btn primary">
+              {/* 
+                OLDINGI VARIANT:
+                <a href="/contacts" ...> => sahifani to'liq yangilardi.
+                HOZIR:
+                NavLink bilan SPA ichida ichki navigatsiya, reloadsiz.
+              */}
+              <NavLink to="/contacts" className="cta-btn primary">
                 {t("about_cta_btn_contact")}
-              </a>
-              <a href="/products" className="cta-btn ghost">
+              </NavLink>
+
+              <NavLink to="/products" className="cta-btn ghost">
                 {t("about_cta_btn_collection")}
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

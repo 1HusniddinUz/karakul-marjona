@@ -1,5 +1,5 @@
 #marketplaces-page {
-  background: #F3EDE5; /* sal to'q, karakul kayfiyatida */
+  background: #f3ede5; /* sal to'q, karakul kayfiyatida */
   min-height: 90vh;
   padding: 80px 0 70px;
   color: #100d0b;
@@ -13,7 +13,9 @@
 }
 
 .mp-heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 34px;
   margin-bottom: 10px;
   letter-spacing: 0.12em;
@@ -39,7 +41,12 @@
 /* CARD */
 
 .mp-card {
-  background: radial-gradient(circle at top left, #2a211c, #18110e 60%, #130e0b);
+  background: radial-gradient(
+    circle at top left,
+    #2a211c,
+    #18110e 60%,
+    #130e0b
+  );
   border-radius: 14px;
   padding: 18px 16px 20px;
   text-align: left;
@@ -68,7 +75,7 @@
   width: 70px;
   height: 70px;
   border-radius: 999px;
-  background: #F3EDE5;
+  background: #f3ede5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,8 +96,10 @@
 }
 
 .mp-name {
-    color: #c3ac95;
-  font-family: "Playfair Display", serif;
+  color: #c3ac95;
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;

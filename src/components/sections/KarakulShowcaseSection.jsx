@@ -1,5 +1,6 @@
 import "../../assets/style/KarakulShowcaseSection.css";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const KarakulShowcaseSection = () => {
   const { t } = useTranslation();
@@ -7,7 +8,6 @@ const KarakulShowcaseSection = () => {
   return (
     <section id="karakul-showcase">
       <div className="ks-wrapper">
-
         <div className="ks-left">
           <p className="ks-tagline">{t("ks_tagline")}</p>
 
@@ -24,12 +24,13 @@ const KarakulShowcaseSection = () => {
           </div>
 
           <div className="ks-links">
-            <a href="/products" className="ks-link-main">
+            <NavLink to="/products" className="ks-link-main">
               {t("ks_link_collection")}
-            </a>
-            <a href="/about" className="ks-link-secondary">
+            </NavLink>
+
+            <NavLink to="/about" className="ks-link-secondary">
               {t("ks_link_story")}
-            </a>
+            </NavLink>
           </div>
         </div>
 
@@ -39,7 +40,6 @@ const KarakulShowcaseSection = () => {
           <div className="ks-mini-card ks-mini-bottom"></div>
           <div className="ks-vertical-label">{t("ks_vertical_label")}</div>
         </div>
-
       </div>
     </section>
   );
