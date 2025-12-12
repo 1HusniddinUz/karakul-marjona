@@ -94,18 +94,18 @@ const translationsUz = {
   // =====================
   // Contacts page
   // =====================
-  contacts_heading: "Contact",
-  contacts_getintouch: "Get in touch",
+  contacts_heading: "Kontaktlar",
+  contacts_getintouch: "Bog'laning uchun ",
   contacts_text:
     "Karakul Marjona atelyesi bilan bog‘lanish uchun qulay kanalni tanlang. Individual buyurtmalar, o‘lcham bo‘yicha tikish va hamkorlik uchun yozishingiz mumkin.",
   contacts_label_email: "Email:",
   contacts_label_telegram: "Telegram:",
   contacts_label_instagram: "Instagram:",
-  contacts_form_firstname: "First Name *",
-  contacts_form_lastname: "Last Name *",
+  contacts_form_firstname: "Ismingiz *",
+  contacts_form_lastname: "Familyangiz *",
   contacts_form_email: "Email *",
-  contacts_form_message: "Message *",
-  contacts_form_submit: "Submit",
+  contacts_form_message: "Xabar qoldirish *",
+  contacts_form_submit: "Yuborish",
   contacts_info_address: "Manzil",
   contacts_info_city: "Buxoro shahri, O‘zbekiston",
   contacts_info_hours: "Ish vaqti",

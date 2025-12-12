@@ -19,7 +19,7 @@
   background: linear-gradient(
     180deg,
     rgba(14, 12, 11, 0.4),
-    rgba(14, 12, 11, 0.5)
+    rgba(14, 12, 11, 0.8)
   );
   backdrop-filter: blur(1px);
   z-index: 1;
