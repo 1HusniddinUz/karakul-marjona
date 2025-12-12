@@ -116,10 +116,30 @@ const translationsFr = {
   // =====================
   mp_heading: "Marketplaces",
   mp_subtitle:
-    "Vous pouvez acheter les produits Karakul Marjona via nos boutiques officielles :",
-  mp_btn_visit: "Voir le magasin",
+    "Vous pouvez acheter les produits Karakul Marjona via nos boutiques officielles ci-dessous.",
+  mp_btn_visit: "Voir la boutique",
   mp_note:
-    "* Pour collaborer sur d’autres marketplaces, veuillez nous contacter.",
+    "* Si vous souhaitez collaborer avec un autre marketplace, veuillez nous contacter via la page de contact.",
+
+  mp_ozon_name: "OZON",
+  mp_ozon_region: "Russie / CEI",
+  mp_ozon_desc:
+    "La boutique officielle certifiée de Karakul Marjona. Livraison pratique en Russie et dans la CEI.",
+
+  mp_wb_name: "Wildberries",
+  mp_wb_region: "Russie / CEI / Europe",
+  mp_wb_desc:
+    "Une vaste vitrine pour manteaux, couvre-chefs et accessoires. Collection spéciale pour les clients Wildberries.",
+
+  mp_uzum_name: "Uzum Market",
+  mp_uzum_region: "Ouzbékistan",
+  mp_uzum_desc:
+    "Le marketplace le plus pratique pour les acheteurs locaux. Livraison rapide depuis Boukhara dans tout le pays.",
+
+  mp_yandex_name: "Yandex Market",
+  mp_yandex_region: "Russie",
+  mp_yandex_desc:
+    "La page officielle de Karakul Marjona dans l'écosystème Yandex. Filtres faciles et commande rapide.",
 
   // =====================
   // Products page

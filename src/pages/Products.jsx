@@ -1,15 +1,115 @@
+import { useState } from "react";
 import "../assets/style/Products.css";
 import { useTranslation } from "react-i18next";
+import aravchin from "../assets/images/aravchin.png"
+import bezbolka from "../assets/images/bezbolka.png"
+import harbiy from "../assets/images/harbiy-yoqa.png"
+import shapka from "../assets/images/j-shapka.png"
+import karzay from "../assets//images/karzay.png"
+import kulonorka from "../assets/images/kulo-norka.png"
+import kulo from "../assets/images/kulo.png"
+import papaxa from "../assets/images/papaxa.png"
+import pilotka from "../assets/images/pilotka.png"
+const allProducts = [
+  {
+    id: 1,
+    name : "Aravchin",
+    desc : "An'anaviy qo‘l mehnati bilan yaratilgan yuqori sifatli aravchin bosh kiyimi.",
+    price : "60$",
+    category: "bosh-kiyim",
+    tag: "Limited",
+    image: aravchin,
+  },
+  {
+    id: 2,
+    name : `Bezbolka`,
+    desc : `Avg'on terisidan tikilgan oq va ko'k ranglar kombinatsiyasi`,
+    price : `90$`,
+    category: "bosh-kiyim",
+    tag: "New",
+    image: bezbolka,
+  },
+  {
+    id: 3,
+    name : `Harbiy telpak va yoqa`,
+    desc : `Avg'on terisidan tikilgan`,
+    price : `150$`,
+    category: "bosh-kiyim",
+    tag: "Bestseller",
+    image: harbiy,
+  },
+  {
+    id: 4,
+    name: `Ayollar bosh kiyimi`,
+    desc : `Avg'on pises terisidan tikilgan`,
+    price : `100$`,
+    category: "bosh-kiyim",
+    tag: "",
+    image: shapka,
+  },
+  {
+    id: 5,
+    name : `Karzay`,
+    desc : `Avg'on tesidan tikilgan`,
+    price : `60$`,
+    category: "bosh-kiyim",
+    tag: "Limited",
+    image: karzay,
+  },
+  {
+    id: 6,
+    name  : `Kulo`,
+    desc : `Kulo norka bilan kombinatsiya qilingan`,
+    price : `60$`,
+    category: "bosh-kiyim",
+    tag: "",
+    image: kulonorka,
+  },
+  {
+    id: 7,
+    name : `Kulo`,
+    desc : `Avg'on terisidan tikilgan`,
+    price : `70$`,
+    category: "aksessuar",
+    tag: "",
+    image: kulo,
+  },
+  {
+    id: 8,
+    name : `Papaxa`,
+    desc : `Avg'on terisidan tikilgan`,
+    price : `100$`,
+    category: "aksessuar",
+    tag: "Limited",
+    image: papaxa,
+  },
+  {
+    id: 9,
+    name : `Pilotka`,
+    desc : `Avgo'on terisidan tikilgan`,
+    price : `60$`,
+    category: "aksessuar",
+    tag: "New",
+    image: pilotka,
+  },
+];
+
+const categoryFilters = [
+  { key: "all", label: "Barchasi" },
+  { key: "shuba", label: "Shubalar" },
+  { key: "bosh-kiyim", label: "Bosh kiyimlar" },
+  { key: "aksessuar", label: "Aksessuarlar" },
+];
 
 const Products = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
   const { t } = useTranslation();
 
-  const categoryFilters = [
-    { key: "all", label: t("pr_filter_all") },
-    { key: "shuba", label: t("pr_filter_shuba") },
-    { key: "bosh-kiyim", label: t("pr_filter_hat") },
-    { key: "aksessuar", label: t("pr_filter_accessory") }
-  ];
+  const filteredProducts =
+    activeCategory === "all"
+      ? allProducts
+      : allProducts.filter((p) => p.category === activeCategory);
 
   return (
     <section id="products-page">

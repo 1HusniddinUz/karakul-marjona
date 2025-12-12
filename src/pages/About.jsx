@@ -28,7 +28,7 @@ const About = () => {
 
         <div className="about-stats">
           <div className="stat-card">
-            <p className="stat-number">18+</p>
+            <p className="stat-number">8+</p>
             <p className="stat-label">{t("about_stat_years")}</p>
             <p className="stat-text">{t("about_stat_years_text")}</p>
           </div>

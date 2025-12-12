@@ -116,10 +116,30 @@ const translationsTr = {
   // =====================
   mp_heading: "Pazar Yerleri",
   mp_subtitle:
-    "Karakul Marjona ürünlerini aşağıdaki resmi çevrimiçi mağazalardan satın alabilirsiniz:",
+    "Karakul Marjona ürünlerini aşağıdaki resmi çevrimiçi mağazalardan satın alabilirsiniz.",
   mp_btn_visit: "Mağazaya Git",
   mp_note:
-    "* Başka bir pazar yeri ile iş birliği yapmak isterseniz, lütfen bizimle iletişime geçin.",
+    "* Başka bir pazar yeriyle iş birliği yapmak isterseniz, lütfen iletişim sayfası üzerinden bizimle iletişime geçin.",
+
+  mp_ozon_name: "OZON",
+  mp_ozon_region: "Rusya / BDT",
+  mp_ozon_desc:
+    "Karakul Marjona ürünlerinin resmi ve sertifikalı mağazasıdır. Rusya ve BDT bölgesine uygun teslimat.",
+
+  mp_wb_name: "Wildberries",
+  mp_wb_region: "Rusya / BDT / Avrupa",
+  mp_wb_desc:
+    "Kürk mantolar, başlıklar ve aksesuarlar için geniş bir vitrin. Wildberries müşterilerine özel koleksiyon.",
+
+  mp_uzum_name: "Uzum Market",
+  mp_uzum_region: "Özbekistan",
+  mp_uzum_desc:
+    "Yerel müşteriler için en uygun pazar yeri. Buhara’dan tüm Özbekistan’a hızlı teslimat.",
+
+  mp_yandex_name: "Yandex Market",
+  mp_yandex_region: "Rusya",
+  mp_yandex_desc:
+    "Karakul Marjona markasının Yandex ekosistemindeki resmi sayfası. Kolay filtreleme ve hızlı sipariş.",
 
   // =====================
   // Products page

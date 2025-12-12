@@ -97,7 +97,7 @@ const translationsUz = {
   contacts_heading: "Contact",
   contacts_getintouch: "Get in touch",
   contacts_text:
-    "Karakul Marjona atelьesi bilan bog‘lanish uchun qulay kanalni tanlang. Individual buyurtmalar, o‘lcham bo‘yicha tikish va hamkorlik uchun yozishingiz mumkin.",
+    "Karakul Marjona atelyesi bilan bog‘lanish uchun qulay kanalni tanlang. Individual buyurtmalar, o‘lcham bo‘yicha tikish va hamkorlik uchun yozishingiz mumkin.",
   contacts_label_email: "Email:",
   contacts_label_telegram: "Telegram:",
   contacts_label_instagram: "Instagram:",
@@ -115,6 +115,7 @@ const translationsUz = {
   // =====================
   // Marketplaces page
   // =====================
+
   mp_heading: "Marketplaces",
   mp_subtitle:
     "Karakul Marjona mahsulotlarini quyidagi rasmiy onlayn do‘konlar orqali xarid qilishingiz mumkin.",
@@ -122,13 +123,34 @@ const translationsUz = {
   mp_note:
     "* Agar siz boshqa marketplace bilan hamkorlik qilishni istasangiz, bog‘lanish sahifasi orqali murojaat qiling.",
 
+  // Marketplace item translations
+  mp_ozon_name: "OZON",
+  mp_ozon_region: "Rossiya / MDH",
+  mp_ozon_desc:
+    "Karakul Marjona mahsulotlarining rasmiy tasdiqlangan do‘koni. Rossiya va MDH xaridorlari uchun qulay yetkazib berish.",
+
+  mp_wb_name: "Wildberries",
+  mp_wb_region: "Rossiya / MDH / Yevropa",
+  mp_wb_desc:
+    "Shubalar, bosh kiyimlar va aksessuarlar uchun keng vitrina. Wildberries xaridorlari uchun maxsus kolleksiya.",
+
+  mp_uzum_name: "Uzum Market",
+  mp_uzum_region: "O‘zbekiston",
+  mp_uzum_desc:
+    "Mahalliy xaridorlar uchun eng qulay marketplace. Buxorodan butun O‘zbekistonga tezkor yetkazib berish.",
+
+  mp_yandex_name: "Yandex Market",
+  mp_yandex_region: "Rossiya",
+  mp_yandex_desc:
+    "Karakul Marjona brendining Yandex ekotizimidagi rasmiy sahifasi. Qulay filtrlar va tezkor buyurtma.",
+
   // =====================
   // Products page (new)
   // =====================
   pr_kicker: "Kolleksiya",
   pr_heading: "Mahsulotlar",
   pr_lead:
-    "Karakul Marjona atelьesi tomonidan tikilgan shubalar, bosh kiyimlar va aksessuarlarning tanlangan kolleksiyasi. Har bir model cheklangan miqdorda ishlab chiqariladi.",
+    "Karakul Marjona atelyesi tomonidan tikilgan shubalar, bosh kiyimlar va aksessuarlarning tanlangan kolleksiyasi. Har bir model cheklangan miqdorda ishlab chiqariladi.",
   pr_filter_all: "Barchasi",
   pr_filter_shuba: "Shubalar",
   pr_filter_hat: "Bosh kiyimlar",
