@@ -24,7 +24,7 @@ const translationsUz = {
   ks_title_main: "Mo'yna til",
   ks_title_span: "sifatida",
   ks_text:
-    "Karakul Marjona – bu shunchaki issiq kiyim emas. Har bir shuba, bosh kiyim va aksessuar – ustoz qo‘llari bilan tikilgan kichik hikoya. Faktura, og‘irlik va siluet orqali xaridor haqida gapiruvchi til.",
+    "Karakul Marjona – bu shunchaki issiq kiyim emas. Har bir shuba, bosh kiyim va aksessuar – ustoz qo‘llari bilan tikilgan kichik hikoya. ",
   ks_pill_coats: "Shubalar",
   ks_pill_hats: "Bosh kiyimlar",
   ks_pill_accessories: "Aksessuarlar",
@@ -40,7 +40,7 @@ const translationsUz = {
   about_lead:
     "Karakul Marjona – bu sanoat fabrika emas, Buxoro shahrida joylashgan kichik, ammo qat’iy estetika va hunar tamoyillariga ega atelier. Har bir shuba va bosh kiyim ustoz qo‘lida alohida model sifatida tug‘iladi.",
   about_body:
-    "Biz tezkor trendlar ortidan quvmaymiz. Diqqat markazida – tabiiy karakul terisi, uning fakturasi, issiqligi va nafosati. Har bir mahsulotimiz cheklangan, individal o‘lcham va buyurtma asosida tayyorlanadi.",
+    "Biz tezkor trendlar ortidan quvmaymiz. Diqqat markazida – tabiiy karakul terisi, uning issiqligi va nafosati. Har bir mahsulotimiz cheklangan, individal o‘lcham va buyurtma asosida tayyorlanadi.",
   about_badge_handmade: "Handmade atelier",
   about_badge_limited: "Limited collections",
   about_badge_location: "Bukhara · Uzbekistan",
@@ -75,7 +75,7 @@ const translationsUz = {
     "Mijozning o‘lchami, uslubi va foydalanish maqsadi aniqlanadi.",
   about_process_step2: "Material tanlash",
   about_process_step2_text:
-    "Karakul terisi zichligi, rang ohangi va fakturasiga qarab birga tanlanadi.",
+    "Karakul terisi zichligi, rang ohangiga qarab birga tanlanadi.",
   about_process_step3: "Andoza va tikish",
   about_process_step3_text:
     "O‘lcham bo‘yicha konstruksiya, qo‘l bilan tikish va dastlabki moslashtirish ishlari.",
