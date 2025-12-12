@@ -16,19 +16,28 @@ const Contacts = () => {
 
             <div className="contacts-block">
               <span className="label">{t("contacts_label_email")}</span>
-              <a href="mailto:husniddinhalimov112@gmail.com">
-                husniddinhalimov112@gmail.com
+              <a href="mailto:bahodirmalika3@gmail.com">
+                bahodirmalika3@gmail.com
               </a>
             </div>
-
             <div className="contacts-block">
-              <span className="label">{t("contacts_label_telegram")}</span>
-              <a href="https://t.me/+998771238096">+998 77 123 80 96</a>
+              <div className="info-col">
+              <h3>{t("contacts_info_socials")}</h3>
+              <a
+                href="https://instagram.com/marjon_karakul"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://t.me/+998771238096"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
             </div>
-
-            <div className="contacts-block">
-              <span className="label">{t("contacts_label_instagram")}</span>
-              <a href="https://instagram.com/marjon_karakul">@marjon_karakul</a>
             </div>
           </div>
 
@@ -79,16 +88,6 @@ const Contacts = () => {
             <div className="info-col">
               <h3>{t("contacts_info_phone")}</h3>
               <a href="tel:+998771238096">+998 77 123 80 96</a>
-            </div>
-
-            <div className="info-col">
-              <h3>{t("contacts_info_socials")}</h3>
-              <a href="https://instagram.com/marjon_karakul">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://t.me/+998771238096">
-                <i class="fa-brands fa-telegram"></i>
-              </a>
             </div>
           </div>
 
